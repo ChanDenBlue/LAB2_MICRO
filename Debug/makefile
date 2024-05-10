@@ -66,8 +66,8 @@ all: main-build
 main-build: TranQuocKhanh_ITITIU21223_LAB2.elf secondary-outputs
 
 # Tool invocations
-TranQuocKhanh_ITITIU21223_LAB2.elf TranQuocKhanh_ITITIU21223_LAB2.map: $(OBJS) $(USER_OBJS) C:\Users\khanh\STM32CubeIDE\workspace_1.14.1\TranQuocKhanh_ITITIU21223_LAB2\STM32F103C6UX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "TranQuocKhanh_ITITIU21223_LAB2.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Users\khanh\STM32CubeIDE\workspace_1.14.1\TranQuocKhanh_ITITIU21223_LAB2\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TranQuocKhanh_ITITIU21223_LAB2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+TranQuocKhanh_ITITIU21223_LAB2.elf TranQuocKhanh_ITITIU21223_LAB2.map: $(OBJS) $(USER_OBJS) C:\Users\khanh\Downloads\TranQuocKhanh_ITITIU21223_LAB2\STM32F103C6UX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "TranQuocKhanh_ITITIU21223_LAB2.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Users\khanh\Downloads\TranQuocKhanh_ITITIU21223_LAB2\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TranQuocKhanh_ITITIU21223_LAB2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
